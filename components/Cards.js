@@ -1,9 +1,9 @@
 import { Card, CardDeck, Button } from "react-bootstrap";
 
-const Cards = (props) => {
+const Cards = props => {
   const handleOpen = () => {
-    open(props.url,'_blank');
-  }
+    open(props.url, "_blank");
+  };
   return (
     <CardDeck className="outBox">
       <Card className="flip-box">
@@ -14,9 +14,9 @@ const Cards = (props) => {
           </div>
           <div className="flip-box-back">
             <p> {props.text} </p>
-            <Button variant="primary"
-            onClick={handleOpen}
-            >Learn more</Button>
+            <Button variant="primary" onClick={handleOpen}>
+              Learn more
+            </Button>
           </div>
         </div>
       </Card>

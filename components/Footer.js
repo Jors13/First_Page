@@ -1,11 +1,11 @@
-
-import {Navbar,Nav} from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 
 const Footer = () => {
   return (
     <div className="foot" fixed="bottom">
       <div className="left">
-        <p>Made by: Jorge Ocaris</p> <a href="#"> Github </a> <a href="#"> Linkedin </a> <a href="#"> Facebook </a>
+        <p>Made by: Jorge Ocaris</p> <a href="#"> Github </a> <a href="#"> Linkedin </a>{" "}
+        <a href="#"> Facebook </a>
       </div>
       <div className="right">
         <div>
@@ -29,9 +29,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="bot">
-         2020 Copyright 
-      </div>
+      <div className="bot">2020 Copyright</div>
     </div>
   );
 };

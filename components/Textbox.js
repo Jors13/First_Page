@@ -1,9 +1,9 @@
 import { Jumbotron, Button } from "react-bootstrap";
 
 const Textbox = () => {
-  const handleOpen = () =>{
-    open('https://spaceplace.nasa.gov/galaxy/en/','_blank')
-  }
+  const handleOpen = () => {
+    open("https://spaceplace.nasa.gov/galaxy/en/", "_blank");
+  };
   return (
     <Jumbotron>
       <h3 className="textT">What's That ?</h3>
@@ -14,7 +14,7 @@ const Textbox = () => {
       </p>
       <p>
         <Button variant="primary" onClick={handleOpen}>
-          Learn More. 
+          Learn More.
         </Button>
       </p>
     </Jumbotron>
