@@ -15,25 +15,23 @@ const Menu = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="justify-content-end" style={{ width: "100%" }}>
-          <Link smooth={true} offset={-60} to="whatIs">
+          <Link smooth={true} offset={-60} to="whatIs" href="#">
             <Nav.Link className="btnM" href="#">
               What's that ?
             </Nav.Link>
           </Link>
-          <Link smooth={true} offset={-80} to="someG">
+          <Link smooth={true} offset={-80} to="someG" href="#">
             <Nav.Link className="btnM" href="#">
               Some of them
             </Nav.Link>
           </Link>
-          <Link smooth={true} offset={-80} to="contributions">
+          <Link smooth={true} offset={-80} to="contributions" href="#">
             <Nav.Link className="btnM" href="#">
               Contributions
             </Nav.Link>
           </Link>
           <Link smooth={true} to="about">
-            <Nav.Link className="btnM" href="#">
-              About
-            </Nav.Link>
+            <Nav.Link className="btnM">About</Nav.Link>
           </Link>
         </Nav>
       </Navbar.Collapse>

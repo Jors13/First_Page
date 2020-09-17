@@ -1,19 +1,19 @@
 import { Card, CardDeck, Button } from "react-bootstrap";
 
-const Cards = props => {
+const Cards = ({ galaxy, image, text, url }) => {
   const handleOpen = () => {
-    open(props.url, "_blank");
+    open(url, "_blank");
   };
   return (
     <CardDeck className="outBox">
       <Card className="flip-box">
         <div className="flip-box-inner">
           <div className="flip-box-front">
-            <h3>{props.cT}</h3>
-            <Card.Img variant="" src={props.image} width="300" height="300" />
+            <h3>{galaxy}</h3>
+            <Card.Img variant="" src={image} width="300" height="300" />
           </div>
           <div className="flip-box-back">
-            <p> {props.text} </p>
+            <p> {text} </p>
             <Button variant="primary" onClick={handleOpen}>
               Learn more
             </Button>
